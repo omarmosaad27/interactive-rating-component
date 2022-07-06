@@ -158,8 +158,8 @@ body{
         background-color: black;
     }
     .card,.thanks_card{
-        width: 380px;
-        height: 340px;
+        width: 400px;
+        height: 360px;
     }
     .title,
     .thanks_card h2{
@@ -190,21 +190,21 @@ body{
     background-color: var(--Very-Dark-Blue);
     }
     .card,.thanks_card{
-        width: 280px;
-        height: 300px;
+        width: 340px;
+        height: 340px;
     }
     .title,.thanks_card h2{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .desc,.thanks_card p{
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
     .rating > span{
-    width: 30px; 
-    height: 30px;
+    width: 40px; 
+    height: 40px;
     font-size: 0.7rem;
     }
     .submit{
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 }
