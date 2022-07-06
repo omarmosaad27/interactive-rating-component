@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700&display=swap');
+/* global styles  */
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    
+}
+
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+}
+.container{
+    width: 90%;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+    position: relative;
+}
+/* start rating card  */
+.card{
+    background-color: var(--Dark-Blue);
+    border-radius: 10px;
+    margin: auto;
+    padding: 0.7rem 0.7rem ;
+}
+.star{
+    background-color: #2d3a48;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.star img{
+    width: 8px;
+    height: 8px;
+}
+.title{
+    color: white;
+    margin-bottom: 8px;
+}
+.desc{
+    color: var(--Light-Grey);
+    margin-bottom: 15px;
+}
+.rating{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.rating > span{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#2d3a48 ;
+    color: var(--Light-Grey);
+    font-size: 0.7rem;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+.rating >span:hover{
+    background-color: var(--Orange);
+    color: white;
+}
+.rating >span.active{
+    background-color: var(--Light-Grey);
+    color: white;
+}
+.submit{
+    width: 100%;
+    height: 30px;
+    background-color: var(--Orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+/* end rating card  */
+
+/* start thanks card */
+.thanks_card{
+    background-color: var(--Dark-Blue);
+    border-radius: 10px;
+    margin: auto;
+    padding: 0.7rem 0.7rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+.thanks_card img{
+    width: 80px;
+    height: 60px;
+}
+.thanks_card .rate{
+    width: 90%;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #2d3a48;
+    color: var(--Orange);
+    font-size: 0.7rem;
+    padding: 0.6rem 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+.thanks_card h2{
+    color: white;
+    text-transform: capitalize;
+}
+.thanks_card p{
+    color: var(--Light-Grey);
+    text-align: center;
+}
+/* end thanks card */
+
+/* mobile design */
+
+@media screen  and (min-width:300px){
+    .wrapper{
+        background-color: black;
+    }
+    .container{
+        background-color: black;
+    }
+    .card,.thanks_card{
+        width: 300px;
+        height: 300px;
+    }
+    .title,
+    .thanks_card h2{
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+    .desc,
+    .thanks_card p{
+        color: var(--Light-Grey);
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+    }
+    .rating > span{
+    width: 40px; 
+    height: 40px;
+    font-size: 0.8rem;
+    }
+    .submit{
+        font-size: 0.9rem;
+    }
+}
+/* desktop design */
+@media screen  and (min-width:600px){
+    .wrapper{
+    background-color: var(--white);
+    }
+    .container{
+    background-color: var(--Very-Dark-Blue);
+    }
+    .card,.thanks_card{
+        width: 200px;
+        height: 220px;
+    }
+    .title,.thanks_card h2{
+        font-size: 0.8rem;
+    }
+    .desc,.thanks_card p{
+        font-size: 0.5rem;
+    }
+    .rating > span{
+    width: 30px; 
+    height: 30px;
+    font-size: 0.7rem;
+    }
+    .submit{
+        font-size: 0.7rem;
+    }
+}
