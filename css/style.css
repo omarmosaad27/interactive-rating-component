@@ -145,9 +145,8 @@ body{
 /* mobile design */
 
 @media screen  and (min-width:300px){
-    
     .container{
-        background-color: black;
+    background-color: var(--Very-Dark-Blue);
     }
     .card,.thanks_card{
         width: 270px;
